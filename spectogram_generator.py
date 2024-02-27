@@ -83,7 +83,6 @@ class WavtoSpec:
         except ValueError as e:
             print(f"Error reading {file_path}: {e}")
 
-
     def visualize_random_spectrogram(self):
         # Get a list of all '.npz' files in the destination directory
         npz_files = list(Path(self.dst_dir).glob('*.npz'))
